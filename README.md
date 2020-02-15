@@ -1,4 +1,6 @@
 # Unity_Snippets
+[![visual-studio](https://img.shields.io/badge/visualstudio-2019-purple)](https://visualstudio.microsoft.com/fr/vs/)
+
 Unity snippets with Visual Studio IDE.
 
 ## Import
