@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
 			<Title>Unity RequireComponent</Title>
@@ -78,6 +78,24 @@
 			</Code>
 		</Snippet>
 	</CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>DOTWeen TO method</Title>
+	  <Shortcut>doto</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Variable</ID>
+		  <ToolTip>Variable name.</ToolTip>
+		  <Default>Variable</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[DOTween.To(() => $Variable$, x => $Variable$ = x, 8, 4f).SetEase(Ease.Linear).Play();$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
 	<CodeSnippet Format="1.0.0">
 		<Header>
 			<Title>Unity Coroutine</Title>
@@ -95,20 +113,25 @@
 					<ToolTip>Method content.</ToolTip>
 					<Default></Default>
 				</Literal>
+				<Literal>
+					<ID>Duration</ID>
+					<ToolTip>Time duration.</ToolTip>
+					<Default>1f</Default>
+				</Literal>
 			</Declarations>
 			<Code Language="CSharp">
 				<![CDATA[private IEnumerator $Name$()
-            {
-                $Code$
+			{
+				$Code$
 
-                yield return null;
-            }$end$]]>
+				yield return new WaitForSeconds($Duration$);
+			}$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>Private Method </Title>
+			<Title>Private Method</Title>
 			<Shortcut>met</Shortcut>
 		</Header>
 		<Snippet>
@@ -136,12 +159,60 @@
 			</Declarations>
 			<Code Language="CSharp">
 				<![CDATA[$Access$ $Type$ $Name$()
-            {
-            	$Code$
-            }$end$]]>
+			{
+				$Code$
+			}$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Public Method with Unity Coroutine</Title>
+	  <Shortcut>metc</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Access</ID>
+		  <ToolTip>Method access modifier.</ToolTip>
+		  <Default>public</Default>
+		</Literal>
+		<Literal>
+		  <ID>Type</ID>
+		  <ToolTip>Method type.</ToolTip>
+		  <Default>void</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Method name.</ToolTip>
+		  <Default>Name</Default>
+		</Literal>
+		<Literal>
+		  <ID>Code</ID>
+		  <ToolTip>Method content.</ToolTip>
+		  <Default></Default>
+		</Literal>
+		<Literal>
+		  <ID>Duration</ID>
+		  <ToolTip>Time duration.</ToolTip>
+		  <Default>1f</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[$Access$ $Type$ $Name$()
+			{
+				StartCoroutine($Name$Core());
+			}
+		
+		private IEnumerator $Name$Core()
+			{
+
+
+				yield return new WaitForSeconds($Duration$);
+			}$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
 	<CodeSnippet Format="1.0.0">
 		<Header>
 			<Title>Singleton</Title>
@@ -157,8 +228,8 @@
 			</Declarations>
 			<Code Language="CSharp">
 				<![CDATA[public static $Name$ Instance {get; private set;}
-            
-            protected void Awake() => Instance = this;$end$]]>
+			
+			protected void Awake() => Instance = this;$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
@@ -177,8 +248,8 @@
 			</Declarations>
 			<Code Language="CSharp">
 				<![CDATA[public static $Name$ Instance {get; private set;}
-            
-           protected void Awake()
+			
+		   protected void Awake()
 	{
 		if (Instance == null)
 		{
@@ -192,6 +263,30 @@
 	}$end$]]>
 			</Code>
 		</Snippet>
+	</CodeSnippet>
+	<CodeSnippet Format="1.0.0">
+	  <Header>
+		<Title>Scriptable Object</Title>
+		<Shortcut>scrip</Shortcut>
+	  </Header>
+	  <Snippet>
+		<Declarations>
+		  <Literal>
+			<ID>Name</ID>
+			<ToolTip>Class name.</ToolTip>
+			<Default>CharacterStats</Default>
+		  </Literal>
+		</Declarations>
+		<Code Language="CSharp">
+		  <![CDATA[using UnityEngine;
+
+  [CreateAssetMenu(fileName = "Data", menuName = "$Name$", order = 1)]
+  public class $Name$ : ScriptableObject
+  {
+
+		}$end$]]>
+		</Code>
+	  </Snippet>
 	</CodeSnippet>
 	<CodeSnippet Format="1.0.0">
 		<Header>
@@ -209,6 +304,24 @@
 			<Code Language="CSharp">
 				<![CDATA[yield return new WaitForSeconds($Duration$);$end$]]>
 			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<CodeSnippet Format="1.0.0">
+	  <Header>
+		<Title>Unity Context Menu</Title>
+		<Shortcut>contm</Shortcut>
+	  </Header>
+		<Snippet>
+		  <Declarations>
+			<Literal>
+			  <ID>Name</ID>
+			  <ToolTip>Method name.</ToolTip>
+			  <Default>Name</Default>
+			</Literal>
+		  </Declarations>
+		  <Code Language="CSharp">
+			<![CDATA[[ContextMenu("$Name$")]$end$]]>
+		  </Code>
 		</Snippet>
 	</CodeSnippet>
 	<CodeSnippet Format="1.0.0">
@@ -289,7 +402,7 @@
 			<Code Language="CSharp">
 				<![CDATA[protected void Awake()
 {
-    $end$
+	$end$
 }]]>
 			</Code>
 		</Snippet>
@@ -303,7 +416,7 @@
 			<Code Language="CSharp">
 				<![CDATA[protected void Start()
 {
-    $end$
+	$end$
 }]]>
 			</Code>
 		</Snippet>
