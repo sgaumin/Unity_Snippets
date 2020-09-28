@@ -47,7 +47,7 @@
 				<Literal>
 					<ID>Var</ID>
 					<ToolTip>Variable name.</ToolTip>
-					<Default>anim</Default>
+					<Default>animator</Default>
 				</Literal>
 				<Literal>
 					<ID>Name</ID>
@@ -57,6 +57,52 @@
 			</Declarations>
 			<Code Language="CSharp">
 				<![CDATA[$Var$ = GetComponent<$Name$>();$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Unity FindObject</Title>
+			<Shortcut>fc</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Var</ID>
+					<ToolTip>Variable name.</ToolTip>
+					<Default>game</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Component name.</ToolTip>
+					<Default>Game</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[$Var$ = FindObjectOfType<$Name$>();$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Unity FindObjects</Title>
+			<Shortcut>fcs</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Var</ID>
+					<ToolTip>Variable name.</ToolTip>
+					<Default>game</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Component name.</ToolTip>
+					<Default>Game</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[$Var$ = FindObjectsOfType<$Name$>();$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
