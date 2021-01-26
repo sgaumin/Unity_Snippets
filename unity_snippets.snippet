@@ -393,8 +393,8 @@
 	</CodeSnippet>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>MinMax Inspector Value</Title>
-			<Shortcut>minmax</Shortcut>
+			<Title>Float Inspector Value</Title>
+			<Shortcut>flora</Shortcut>
 		</Header>
 		<Snippet>
 			<Declarations>
@@ -424,7 +424,44 @@
 				</Literal>
 			</Declarations>
 			<Code Language="CSharp">
-				<![CDATA[[SerializeField, MinMaxSlider($MinLimit$, $MaxLimit$)] private MinMax $Name$ = new MinMax($Min$, $Max$);$end$]]>
+				<![CDATA[[SerializeField, FloatRangeSlider($MinLimit$, $MaxLimit$)] private FloatRange $Name$ = new FloatRange($Min$, $Max$);$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Int Inspector Value</Title>
+			<Shortcut>intra</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Type</ID>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<Default>variableName</Default>
+				</Literal>
+				<Literal>
+					<ID>Min</ID>
+					<Default>1</Default>
+				</Literal>
+				<Literal>
+					<ID>Max</ID>
+					<Default>3</Default>
+				</Literal>
+				<Literal>
+					<ID>MinLimit</ID>
+					<Default>0</Default>
+				</Literal>
+				<Literal>
+					<ID>MaxLimit</ID>
+					<Default>10</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[[SerializeField, IntRangeSlider($MinLimit$, $MaxLimit$)] private IntRange $Name$ = new IntRange($Min$, $Max$);$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
