@@ -478,6 +478,20 @@
 	</CodeSnippet>
 	<CodeSnippet Format="1.0.0">
 		<Header>
+			<Title>FMOB Code</Title>
+			<Shortcut>fmob</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[soundInstance = FMODUnity.RuntimeManager.CreateInstance("event:/SubFolder/Sound");
+		soundInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+		soundInstance.setParameterByName("Param", 1f);
+		soundInstance.start();$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<CodeSnippet Format="1.0.0">
+		<Header>
 			<Title>Awake</Title>
 			<Shortcut>awake</Shortcut>
 		</Header>
