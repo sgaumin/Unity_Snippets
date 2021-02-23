@@ -483,10 +483,16 @@
 		</Header>
 		<Snippet>
 			<Code Language="CSharp">
-				<![CDATA[soundInstance = FMODUnity.RuntimeManager.CreateInstance("event:/SubFolder/Sound");
-		soundInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-		soundInstance.setParameterByName("Param", 1f);
-		soundInstance.start();$end$]]>
+				<![CDATA[// Init
+				soundInstance = FMODUnity.RuntimeManager.CreateInstance("event:/SubFolder/Sound");
+	soundInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+	
+	// Play
+	soundInstance.setParameterByName("Param", 1f);
+	soundInstance.start();
+	
+	// Stop
+	soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
