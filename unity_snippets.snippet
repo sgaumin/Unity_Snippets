@@ -1,129 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity RequireComponent</Title>
-			<Shortcut>reqc</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Component</ID>
-					<ToolTip>Component name.</ToolTip>
-					<Default>Animator</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[[RequireComponent(typeof($Component$))]$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity Debug Log</Title>
-			<Shortcut>log</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Message</ID>
-					<ToolTip>Debug message.</ToolTip>
-					<Default>Houba</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[Debug.Log($$"$Message$");$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity GetComponent</Title>
-			<Shortcut>gc</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Var</ID>
-					<ToolTip>Variable name.</ToolTip>
-					<Default>animator</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Component name.</ToolTip>
-					<Default>Animator</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[$Var$ = GetComponent<$Name$>();$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity FindObject</Title>
-			<Shortcut>fc</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Var</ID>
-					<ToolTip>Variable name.</ToolTip>
-					<Default>game</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Component name.</ToolTip>
-					<Default>Game</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[$Var$ = FindObjectOfType<$Name$>();$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity FindObjects</Title>
-			<Shortcut>fcs</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Var</ID>
-					<ToolTip>Variable name.</ToolTip>
-					<Default>game</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Component name.</ToolTip>
-					<Default>Game</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[$Var$ = FindObjectsOfType<$Name$>();$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity Header</Title>
-			<Shortcut>hea</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Component name.</ToolTip>
-					<Default>Parameters</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[[Header("$Name$")]$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity RequireComponent</Title>
+	  <Shortcut>reqc</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Component</ID>
+		  <ToolTip>Component name.</ToolTip>
+		  <Default>Animator</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[[RequireComponent(typeof($Component$))]$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity Debug Log</Title>
+	  <Shortcut>log</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Message</ID>
+		  <ToolTip>Debug message.</ToolTip>
+		  <Default>Houba</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[Debug.Log($$"$Message$");$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity GetComponent</Title>
+	  <Shortcut>gc</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Var</ID>
+		  <ToolTip>Variable name.</ToolTip>
+		  <Default>animator</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Component name.</ToolTip>
+		  <Default>Animator</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[$Var$ = GetComponent<$Name$>();$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity FindObject</Title>
+	  <Shortcut>fc</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Var</ID>
+		  <ToolTip>Variable name.</ToolTip>
+		  <Default>game</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Component name.</ToolTip>
+		  <Default>Game</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[$Var$ = FindObjectOfType<$Name$>();$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity FindObjects</Title>
+	  <Shortcut>fcs</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Var</ID>
+		  <ToolTip>Variable name.</ToolTip>
+		  <Default>game</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Component name.</ToolTip>
+		  <Default>Game</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[$Var$ = FindObjectsOfType<$Name$>();$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity Header</Title>
+	  <Shortcut>hea</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Component name.</ToolTip>
+		  <Default>Parameters</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[[Header("$Name$")]$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
   <CodeSnippet Format="1.0.0">
 	<Header>
 	  <Title>DOTWeen TO method</Title>
@@ -142,111 +141,111 @@
 	  </Code>
 	</Snippet>
   </CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity Coroutine</Title>
-			<Shortcut>core</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Method name.</ToolTip>
-					<Default>Core</Default>
-				</Literal>
-				<Literal>
-					<ID>Code</ID>
-					<ToolTip>Method content.</ToolTip>
-					<Default></Default>
-				</Literal>
-				<Literal>
-					<ID>Duration</ID>
-					<ToolTip>Time duration.</ToolTip>
-					<Default>1f</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[private IEnumerator $Name$()
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity Coroutine</Title>
+	  <Shortcut>core</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Method name.</ToolTip>
+		  <Default>Core</Default>
+		</Literal>
+		<Literal>
+		  <ID>Code</ID>
+		  <ToolTip>Method content.</ToolTip>
+		  <Default></Default>
+		</Literal>
+		<Literal>
+		  <ID>Duration</ID>
+		  <ToolTip>Time duration.</ToolTip>
+		  <Default>1f</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[private IEnumerator $Name$()
 			{
 				$Code$
 
 				yield return new WaitForSeconds($Duration$);
 			}$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Private Method</Title>
-			<Shortcut>met</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Access</ID>
-					<ToolTip>Method access modifier.</ToolTip>
-					<Default>private</Default>
-				</Literal>
-				<Literal>
-					<ID>Type</ID>
-					<ToolTip>Method type.</ToolTip>
-					<Default>void</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Method name.</ToolTip>
-					<Default>Name</Default>
-				</Literal>
-				<Literal>
-					<ID>Code</ID>
-					<ToolTip>Method content.</ToolTip>
-					<Default></Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[$Access$ $Type$ $Name$()
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Private Method</Title>
+	  <Shortcut>met</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Access</ID>
+		  <ToolTip>Method access modifier.</ToolTip>
+		  <Default>private</Default>
+		</Literal>
+		<Literal>
+		  <ID>Type</ID>
+		  <ToolTip>Method type.</ToolTip>
+		  <Default>void</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Method name.</ToolTip>
+		  <Default>Name</Default>
+		</Literal>
+		<Literal>
+		  <ID>Code</ID>
+		  <ToolTip>Method content.</ToolTip>
+		  <Default></Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[$Access$ $Type$ $Name$()
 			{
 				$Code$
 			}$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Public Method</Title>
-			<Shortcut>metp</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Access</ID>
-					<ToolTip>Method access modifier.</ToolTip>
-					<Default>public</Default>
-				</Literal>
-				<Literal>
-					<ID>Type</ID>
-					<ToolTip>Method type.</ToolTip>
-					<Default>void</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Method name.</ToolTip>
-					<Default>Name</Default>
-				</Literal>
-				<Literal>
-					<ID>Code</ID>
-					<ToolTip>Method content.</ToolTip>
-					<Default></Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[$Access$ $Type$ $Name$()
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Public Method</Title>
+	  <Shortcut>metp</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Access</ID>
+		  <ToolTip>Method access modifier.</ToolTip>
+		  <Default>public</Default>
+		</Literal>
+		<Literal>
+		  <ID>Type</ID>
+		  <ToolTip>Method type.</ToolTip>
+		  <Default>void</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Method name.</ToolTip>
+		  <Default>Name</Default>
+		</Literal>
+		<Literal>
+		  <ID>Code</ID>
+		  <ToolTip>Method content.</ToolTip>
+		  <Default></Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[$Access$ $Type$ $Name$()
 			{
 				$Code$
 			}$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
   <CodeSnippet Format="1.0.0">
 	<Header>
 	  <Title>Public Method with Unity Coroutine</Title>
@@ -285,53 +284,52 @@
 			{
 				StartCoroutine($Name$Core());
 			}
-		
+
 		private IEnumerator $Name$Core()
 			{
-
 
 				yield return new WaitForSeconds($Duration$);
 			}$end$]]>
 	  </Code>
 	</Snippet>
   </CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Singleton</Title>
-			<Shortcut>sing</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Class name.</ToolTip>
-					<Default>GameSystem</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[public static $Name$ Instance {get; private set;}
-			
-			protected void Awake() => Instance = this;$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Singleton DontDestroyOnLoad</Title>
-			<Shortcut>singd</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Name</ID>
-					<ToolTip>Class name.</ToolTip>
-					<Default>MusicPlayer</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[public static $Name$ Instance {get; private set;}
-			
-		   protected void Awake()
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Singleton</Title>
+	  <Shortcut>sing</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Class name.</ToolTip>
+		  <Default>GameSystem</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[public static $Name$ Instance {get; private set;}
+
+			private void Awake() => Instance = this;$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Singleton DontDestroyOnLoad</Title>
+	  <Shortcut>singd</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Class name.</ToolTip>
+		  <Default>MusicPlayer</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[public static $Name$ Instance {get; private set;}
+
+		   private void Awake()
 	{
 		if (Instance == null)
 		{
@@ -343,186 +341,186 @@
 			Destroy(gameObject);
 		}
 	}$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-	  <Header>
-		<Title>Scriptable Object</Title>
-		<Shortcut>scrip</Shortcut>
-	  </Header>
-	  <Snippet>
-		<Declarations>
-		  <Literal>
-			<ID>Name</ID>
-			<ToolTip>Class name.</ToolTip>
-			<Default>CharacterStats</Default>
-		  </Literal>
-		</Declarations>
-		<Code Language="CSharp">
-		  <![CDATA[using UnityEngine;
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Scriptable Object</Title>
+	  <Shortcut>scrip</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Class name.</ToolTip>
+		  <Default>CharacterStats</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[using UnityEngine;
 
   [CreateAssetMenu(fileName = "Data", menuName = "$Name$", order = 1)]
   public class $Name$ : ScriptableObject
   {
 
 		}$end$]]>
-		</Code>
-	  </Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Unity Coroutine Wait</Title>
-			<Shortcut>wait</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Duration</ID>
-					<ToolTip>Time duration.</ToolTip>
-					<Default>1f</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[yield return new WaitForSeconds($Duration$);$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-	  <Header>
-		<Title>Unity Context Menu</Title>
-		<Shortcut>contm</Shortcut>
-	  </Header>
-		<Snippet>
-		  <Declarations>
-			<Literal>
-			  <ID>Name</ID>
-			  <ToolTip>Method name.</ToolTip>
-			  <Default>Name</Default>
-			</Literal>
-		  </Declarations>
-		  <Code Language="CSharp">
-			<![CDATA[[ContextMenu("$Name$")]$end$]]>
-		  </Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Inspector Value</Title>
-			<Shortcut>ins</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Type</ID>
-					<Default>float</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<Default>variableName</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[[SerializeField] private $Type$ $Name$;$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Float Inspector Value</Title>
-			<Shortcut>flora</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Type</ID>
-					<Default>float</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<Default>variableName</Default>
-				</Literal>
-				<Literal>
-					<ID>Min</ID>
-					<Default>1f</Default>
-				</Literal>
-				<Literal>
-					<ID>Max</ID>
-					<Default>3f</Default>
-				</Literal>
-				<Literal>
-					<ID>MinLimit</ID>
-					<Default>0f</Default>
-				</Literal>
-				<Literal>
-					<ID>MaxLimit</ID>
-					<Default>10f</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[[SerializeField, FloatRangeSlider($MinLimit$, $MaxLimit$)] private FloatRange $Name$ = new FloatRange($Min$, $Max$);$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Int Inspector Value</Title>
-			<Shortcut>intra</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>Type</ID>
-					<Default>int</Default>
-				</Literal>
-				<Literal>
-					<ID>Name</ID>
-					<Default>variableName</Default>
-				</Literal>
-				<Literal>
-					<ID>Min</ID>
-					<Default>1</Default>
-				</Literal>
-				<Literal>
-					<ID>Max</ID>
-					<Default>3</Default>
-				</Literal>
-				<Literal>
-					<ID>MinLimit</ID>
-					<Default>0</Default>
-				</Literal>
-				<Literal>
-					<ID>MaxLimit</ID>
-					<Default>10</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[[SerializeField, IntRangeSlider($MinLimit$, $MaxLimit$)] private IntRange $Name$ = new IntRange($Min$, $Max$);$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Game Data Property Bool</Title>
-			<Shortcut>gdab</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>NameLower</ID>
-					<Default>default</Default>
-				</Literal>
-				<Literal>
-					<ID>NameCapitalize</ID>
-					<Default>Default</Default>
-				</Literal>
-				<Literal>
-					<ID>NameConstant</ID>
-					<Default>DEFAULT</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[private const string $NameConstant$ = "$NameLower$";
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity Coroutine Wait</Title>
+	  <Shortcut>wait</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Duration</ID>
+		  <ToolTip>Time duration.</ToolTip>
+		  <Default>1f</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[yield return new WaitForSeconds($Duration$);$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Unity Context Menu</Title>
+	  <Shortcut>contm</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Name</ID>
+		  <ToolTip>Method name.</ToolTip>
+		  <Default>Name</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[[ContextMenu("$Name$")]$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Inspector Value</Title>
+	  <Shortcut>ins</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Type</ID>
+		  <Default>float</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <Default>variableName</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[[SerializeField] private $Type$ $Name$;$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Float Inspector Value</Title>
+	  <Shortcut>flora</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Type</ID>
+		  <Default>float</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <Default>variableName</Default>
+		</Literal>
+		<Literal>
+		  <ID>Min</ID>
+		  <Default>1f</Default>
+		</Literal>
+		<Literal>
+		  <ID>Max</ID>
+		  <Default>3f</Default>
+		</Literal>
+		<Literal>
+		  <ID>MinLimit</ID>
+		  <Default>0f</Default>
+		</Literal>
+		<Literal>
+		  <ID>MaxLimit</ID>
+		  <Default>10f</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[[SerializeField, FloatRangeSlider($MinLimit$, $MaxLimit$)] private FloatRange $Name$ = new FloatRange($Min$, $Max$);$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Int Inspector Value</Title>
+	  <Shortcut>intra</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Type</ID>
+		  <Default>int</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <Default>variableName</Default>
+		</Literal>
+		<Literal>
+		  <ID>Min</ID>
+		  <Default>1</Default>
+		</Literal>
+		<Literal>
+		  <ID>Max</ID>
+		  <Default>3</Default>
+		</Literal>
+		<Literal>
+		  <ID>MinLimit</ID>
+		  <Default>0</Default>
+		</Literal>
+		<Literal>
+		  <ID>MaxLimit</ID>
+		  <Default>10</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[[SerializeField, IntRangeSlider($MinLimit$, $MaxLimit$)] private IntRange $Name$ = new IntRange($Min$, $Max$);$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Game Data Property Bool</Title>
+	  <Shortcut>gdab</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>NameLower</ID>
+		  <Default>default</Default>
+		</Literal>
+		<Literal>
+		  <ID>NameCapitalize</ID>
+		  <Default>Default</Default>
+		</Literal>
+		<Literal>
+		  <ID>NameConstant</ID>
+		  <Default>DEFAULT</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[private const string $NameConstant$ = "$NameLower$";
 
 	public static bool $NameCapitalize$
 	{
@@ -536,31 +534,31 @@
 			PlayerPrefs.Save();
 		}
 	}$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Game Data Property Int</Title>
-			<Shortcut>gdai</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>NameLower</ID>
-					<Default>default</Default>
-				</Literal>
-				<Literal>
-					<ID>NameCapitalize</ID>
-					<Default>Default</Default>
-				</Literal>
-				<Literal>
-					<ID>NameConstant</ID>
-					<Default>DEFAULT</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[private const string $NameConstant$ = "$NameLower$";
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Game Data Property Int</Title>
+	  <Shortcut>gdai</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>NameLower</ID>
+		  <Default>default</Default>
+		</Literal>
+		<Literal>
+		  <ID>NameCapitalize</ID>
+		  <Default>Default</Default>
+		</Literal>
+		<Literal>
+		  <ID>NameConstant</ID>
+		  <Default>DEFAULT</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[private const string $NameConstant$ = "$NameLower$";
 
 	public static int $NameCapitalize$
 	{
@@ -574,31 +572,31 @@
 			PlayerPrefs.Save();
 		}
 	}$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Game Data Property Float</Title>
-			<Shortcut>gdaf</Shortcut>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>NameLower</ID>
-					<Default>default</Default>
-				</Literal>
-				<Literal>
-					<ID>NameCapitalize</ID>
-					<Default>Default</Default>
-				</Literal>
-				<Literal>
-					<ID>NameConstant</ID>
-					<Default>DEFAULT</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="CSharp">
-				<![CDATA[private const string $NameConstant$ = "$NameLower$";
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Game Data Property Float</Title>
+	  <Shortcut>gdaf</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>NameLower</ID>
+		  <Default>default</Default>
+		</Literal>
+		<Literal>
+		  <ID>NameCapitalize</ID>
+		  <Default>Default</Default>
+		</Literal>
+		<Literal>
+		  <ID>NameConstant</ID>
+		  <Default>DEFAULT</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[private const string $NameConstant$ = "$NameLower$";
 
 	public static float $NameCapitalize$
 	{
@@ -612,66 +610,66 @@
 			PlayerPrefs.Save();
 		}
 	}$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>ToString</Title>
-			<Shortcut>tostring</Shortcut>
-		</Header>
-		<Snippet>
-			<Code Language="CSharp">
-				<![CDATA[public override string ToString() => $$"$end$";]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>FMOB Code</Title>
-			<Shortcut>fmob</Shortcut>
-		</Header>
-		<Snippet>
-			<Code Language="CSharp">
-				<![CDATA[// Init
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>ToString</Title>
+	  <Shortcut>tostring</Shortcut>
+	</Header>
+	<Snippet>
+	  <Code Language="CSharp">
+		<![CDATA[public override string ToString() => $$"$end$";]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>FMOB Code</Title>
+	  <Shortcut>fmob</Shortcut>
+	</Header>
+	<Snippet>
+	  <Code Language="CSharp">
+		<![CDATA[// Init
 				soundInstance = FMODUnity.RuntimeManager.CreateInstance("event:/SubFolder/Sound");
 	soundInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-	
+
 	// Play
 	soundInstance.setParameterByName("Param", 1f);
 	soundInstance.start();
-	
+
 	// Stop
 	soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);$end$]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Awake</Title>
-			<Shortcut>awake</Shortcut>
-		</Header>
-		<Snippet>
-			<Code Language="CSharp">
-				<![CDATA[protected void Awake()
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Awake</Title>
+	  <Shortcut>awake</Shortcut>
+	</Header>
+	<Snippet>
+	  <Code Language="CSharp">
+		<![CDATA[private void Awake()
 {
 	$end$
 }]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>Start</Title>
-			<Shortcut>start</Shortcut>
-		</Header>
-		<Snippet>
-			<Code Language="CSharp">
-				<![CDATA[protected void Start()
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Start</Title>
+	  <Shortcut>start</Shortcut>
+	</Header>
+	<Snippet>
+	  <Code Language="CSharp">
+		<![CDATA[private void Start()
 {
 	$end$
 }]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
 </CodeSnippets>
