@@ -315,6 +315,32 @@
   </CodeSnippet>
   <CodeSnippet Format="1.0.0">
 	<Header>
+	  <Title>Analytics</Title>
+	  <Shortcut>ana</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>EventName</ID>
+		  <ToolTip>Event Name</ToolTip>
+		  <Default>Event</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[#if ENABLE_CLOUD_SERVICES_ANALYTICS
+			string customEventName = "$EventName$";
+			AnalyticsResult ar = Analytics.CustomEvent(customEventName, new Dictionary<string, object>
+			{
+				{ "Level", level},
+				{ "Win", hasWon}
+			});
+			Debug.Log($$"Analytics {customEventName}: {ar}");
+#endif$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+	<Header>
 	  <Title>Singleton DontDestroyOnLoad</Title>
 	  <Shortcut>singd</Shortcut>
 	</Header>
