@@ -698,4 +698,27 @@
 	  </Code>
 	</Snippet>
   </CodeSnippet>
+<CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Dependency</Title>
+	  <Shortcut>insd</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Type</ID>
+		  <Default>SpriteRenderer</Default>
+		</Literal>
+		<Literal>
+		  <ID>Name</ID>
+		  <Default>var</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[[SerializeField] private Dependency<$Type$> _$Name$;
+		
+		private $Type$ $Name$ => _$Name$.Resolve(this);$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
 </CodeSnippets>
