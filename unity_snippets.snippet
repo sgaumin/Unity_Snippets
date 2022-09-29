@@ -32,7 +32,7 @@
 		</Literal>
 	  </Declarations>
 	  <Code Language="CSharp">
-		<![CDATA[Logger.Report($$"$Message$");$end$]]>
+		<![CDATA[Debug.Log($$"$Message$");$end$]]>
 	  </Code>
 	</Snippet>
   </CodeSnippet>
@@ -269,9 +269,9 @@
 		  <Default>Name</Default>
 		</Literal>
 		<Literal>
-		  <ID>Code</ID>
-		  <ToolTip>Method content.</ToolTip>
-		  <Default></Default>
+		  <ID>Routine</ID>
+		  <ToolTip>Routine reference.</ToolTip>
+		  <Default>routine</Default>
 		</Literal>
 		<Literal>
 		  <ID>Duration</ID>
@@ -282,7 +282,7 @@
 	  <Code Language="CSharp">
 		<![CDATA[$Access$ $Type$ $Name$()
 			{
-				StartCoroutine($Name$Core());
+				this.TryStartCoroutine($Name$Core(), ref $Routine$);
 			}
 
 		private IEnumerator $Name$Core()
@@ -722,6 +722,44 @@
 		<![CDATA[[SerializeField] private Dependency<$Type$> _$Name$;
 		
 		private $Type$ $Name$ => _$Name$.Resolve(this);$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+<CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Start Coroutine</Title>
+	  <Shortcut>stac</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Name</ID>
+		  <Default>Name</Default>
+		</Literal>
+		<Literal>
+		  <ID>Routine</ID>
+		  <Default>routine</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[this.TryStartCoroutine($Name$Core(), ref $Routine$);$end$]]>
+	  </Code>
+	</Snippet>
+  </CodeSnippet>
+	<CodeSnippet Format="1.0.0">
+	<Header>
+	  <Title>Stop Coroutine</Title>
+	  <Shortcut>stoc</Shortcut>
+	</Header>
+	<Snippet>
+	  <Declarations>
+		<Literal>
+		  <ID>Routine</ID>
+		  <Default>routine</Default>
+		</Literal>
+	  </Declarations>
+	  <Code Language="CSharp">
+		<![CDATA[this.TryStopCoroutine(ref $Routine$);$end$]]>
 	  </Code>
 	</Snippet>
   </CodeSnippet>
